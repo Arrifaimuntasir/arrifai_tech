@@ -3,35 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arrifai Tech - Full Stack Developer</title>
-    <meta name="description" content="Arrifai Muntasir - Full Stack Developer & Digital Designer based in Dar es Salaam, Tanzania">
-    
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    
-    <!-- Styles -->
+    <title>Arrifai Tech - Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
-
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
                 <a href="#">Arrifai<span>Tech</span></a>
             </div>
-            <div class="nav-menu" id="nav-menu">
+            <div class="nav-menu">
                 <a href="#home" class="nav-link">Home</a>
                 <a href="#about" class="nav-link">About Me</a>
                 <a href="#projects" class="nav-link">Projects</a>
                 <a href="#skills" class="nav-link">Skills</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
-            <div class="nav-toggle" id="nav-toggle">
+            <div class="nav-toggle">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -42,26 +35,19 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1 class="hero-title">
+            <h1 class="hero-title animate-text">
                 Hello, I'm <span class="highlight">Arrifai Muntasir</span>
             </h1>
             <p class="hero-subtitle">Full Stack Developer & Digital Designer</p>
             <div class="hero-buttons">
                 <a href="#projects" class="btn btn-primary">View My Projects</a>
-                <a href="#contact" class="btn btn-secondary">Hire Me Now</a>
-            </div>
-            <div class="social-links-hero">
-                <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-behance"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-dribbble"></i></a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
             </div>
         </div>
         <div class="hero-image">
             <div class="floating-card">
-                <img src="images/profile.jpg" alt="Arrifai Muntasir">
+                <img src="images/profile.jpg" alt="Profile Picture">
             </div>
-            <div class="glow-effect"></div>
         </div>
     </section>
 
@@ -71,7 +57,7 @@
             <h2 class="section-title">About <span>Me</span></h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>I'm a passionate Full Stack Developer based in Dar es Salaam, Tanzania. I specialize in building exceptional digital experiences that are fast, accessible, and visually stunning. I love turning ideas into reality using modern technologies.</p>
+                    <p>I'm passionate about creating technology solutions that transform lives. I've worked on various projects including...</p>
                     <div class="about-stats">
                         <div class="stat">
                             <h3>50+</h3>
@@ -79,11 +65,11 @@
                         </div>
                         <div class="stat">
                             <h3>3+</h3>
-                            <p>Years Experience</p>
+                            <p>Years of Experience</p>
                         </div>
                         <div class="stat">
                             <h3>30+</h3>
-                            <p>Happy Clients</p>
+                            <p>Satisfied Clients</p>
                         </div>
                     </div>
                 </div>
@@ -141,15 +127,6 @@
                         <div class="skill-progress" data-width="85"></div>
                     </div>
                 </div>
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span>Flutter</span>
-                        <span>70%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="70"></div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -161,60 +138,48 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="images/project1.jpg" alt="E-commerce Website">
-                        <div class="project-overlay">
-                            <a href="#" class="overlay-link"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
+                        <img src="images/project1.jpg" alt="Project 1">
                     </div>
                     <div class="project-content">
                         <h3>E-commerce Website</h3>
-                        <p>Full-featured online store with payment gateway integration and admin dashboard</p>
+                        <p>Online store with multiple features and payment integration</p>
                         <div class="project-tech">
                             <span>React</span>
                             <span>Node.js</span>
                             <span>MongoDB</span>
-                            <span>Stripe</span>
                         </div>
-                        <a href="#" class="project-link">View Live Project →</a>
+                        <a href="#" class="project-link">View Project →</a>
                     </div>
                 </div>
                 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="images/project2.jpg" alt="Business Mobile App">
-                        <div class="project-overlay">
-                            <a href="#" class="overlay-link"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
+                        <img src="images/project2.jpg" alt="Project 2">
                     </div>
                     <div class="project-content">
-                        <h3>Business Management App</h3>
-                        <p>Cross-platform mobile app helping small businesses manage inventory & sales</p>
+                        <h3>Mobile App</h3>
+                        <p>Mobile application to help small businesses manage operations</p>
                         <div class="project-tech">
                             <span>Flutter</span>
                             <span>Firebase</span>
-                            <span>Node.js</span>
                         </div>
-                        <a href="#" class="project-link">View Live Project →</a>
+                        <a href="#" class="project-link">View Project →</a>
                     </div>
                 </div>
                 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="images/project3.jpg" alt="Modern Portfolio">
-                        <div class="project-overlay">
-                            <a href="#" class="overlay-link"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
+                        <img src="images/project3.jpg" alt="Project 3">
                     </div>
                     <div class="project-content">
-                        <h3>Modern Portfolio</h3>
-                        <p>High-performance portfolio with smooth animations and glassmorphism design</p>
+                        <h3>Portfolio Website</h3>
+                        <p>Responsive portfolio website with modern design and animations</p>
                         <div class="project-tech">
                             <span>HTML5</span>
                             <span>CSS3</span>
                             <span>JavaScript</span>
-                            <span>GSAP</span>
                         </div>
-                        <a href="#" class="project-link">View Live Project →</a>
+                        <a href="#" class="project-link">View Project →</a>
                     </div>
                 </div>
             </div>
@@ -224,54 +189,33 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Get In <span>Touch</span></h2>
+            <h2 class="section-title">Contact <span>Me</span></h2>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Let's work together!</h3>
-                    <p>I'm currently available for freelance work. If you have a project that needs coding magic, let's talk!</p>
-                    
                     <div class="contact-item">
-                        <h4><i class="fas fa-envelope"></i> Email</h4>
+                        <h3>📧 Email</h3>
                         <p>arifaimuntasir@gmail.com</p>
                     </div>
                     <div class="contact-item">
-                        <h4><i class="fas fa-phone"></i> Phone</h4>
+                        <h3>📱 Phone</h3>
                         <p>+255 683 628 142</p>
                     </div>
                     <div class="contact-item">
-                        <h4><i class="fas fa-map-marker-alt"></i> Location</h4>
+                        <h3>📍 Location</h3>
                         <p>Dar es Salaam, Tanzania</p>
                     </div>
-
-                    <div class="social-links">
-                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                    </div>
                 </div>
-
-                <!-- Premium Contact Form -->
-                <div class="contact-form">
-                    <form action="https://formsubmit.co/arrifaimuntasir@gmail.com" method="POST">
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea name="message" placeholder="Your Message..." required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary full-width">
-                            <span>Send Message</span>
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </form>
-                </div>
+                <!-- Contact Form - Formspree -->
+<form class="contact-form" action="https://formsubmit.co/arrifaimuntasir@gmail.com" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    
+    <!-- Hidden field ili ujue ni kutoka website gani (optional) -->
+    <input type="hidden" name="_subject" value="New message from Portfolio Website">
+    
+    <button type="submit" class="btn btn-primary">Send Message</button>
+</form>
             </div>
         </div>
     </section>
@@ -279,16 +223,12 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; <span id="year">2025</span> Arrifai Tech. All rights reserved. Made with <i class="fas fa-heart"></i> in Dar es Salaam</p>
+            <p>&copy; 2025 Arrifai Tech. All rights reserved.</p>
         </div>
     </footer>
 
     <!-- Scripts -->
     <script src="js/animations.js"></script>
     <script src="js/main.js"></script>
-    <script>
-        // Update year automatically
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
 </body>
 </html>
