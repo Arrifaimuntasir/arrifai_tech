@@ -205,17 +205,38 @@
                         <p>Dar es Salaam, Tanzania</p>
                     </div>
                 </div>
-                <!-- Contact Form - Formspree -->
-<form class="contact-form" action="https://formsubmit.co/arrifaimuntasir@gmail.com" method="POST">
+                <!-- Contact Form - FormSubmit.co (Enhanced with Anti-Spam) -->
+<!-- Contact Form - EmailJS (Inafanya kazi 100% – Final Version) -->
+<form id="contact-form" class="contact-form">
     <input type="text" name="name" placeholder="Your Name" required>
     <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-    
-    <!-- Hidden field ili ujue ni kutoka website gani (optional) -->
-    <input type="hidden" name="_subject" value="New message from Portfolio Website">
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
     
     <button type="submit" class="btn btn-primary">Send Message</button>
 </form>
+
+<!-- EmailJS Script – Weka hii chini kabisa ya body (kabla ya </body>) -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+    (function(){
+        // WEKA PUBLIC KEY YAKO HAPA
+        emailjs.init("gEon_X7r0HAjDNn8r");
+    })();
+
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // WEKA SERVICE ID NA TEMPLATE ID YAKO HAPA
+        emailjs.sendForm('service_4q2o40s', 'KqrQ4AzLQdy3NIA-4c8T8', this)
+            .then(() => {
+                alert('Asante sana! Message yako imetumwa kikamilifu');
+                this.reset();
+            }, (error) => {
+                alert('Kuna tatizo kidogo. Jaribu tena');
+                console.log(error);
+            });
+    });
+</script>
             </div>
         </div>
     </section>
