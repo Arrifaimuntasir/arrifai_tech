@@ -206,14 +206,15 @@
                     </div>
                 </div>
                 <!-- Contact Form - Formspree -->
-<form class="contact-form" action="https://formspree.io/f/movbezbl" method="POST">
+<form class="contact-form" action="https://formspree.io/f/xovbdqyv" method="POST">  <!-- Badilisha hii link iwe yako -->
     <input type="text" name="name" placeholder="Your Name" required>
     <input type="email" name="email" placeholder="Your Email" required>
     <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
     
-    <!-- Hidden field ili ujue ni kutoka website gani (optional) -->
-    <input type="hidden" name="_subject" value="New message from Portfolio Website">
-    
+    <!-- Hii inazuia spam na inakufanya ujue ni kutoka wapi -->
+    <input type="hidden" name="_subject" value="New message from Arrifai Portfolio">
+    <input type="text" name="_gotcha" style="display:none">  <!-- Anti-spam -->
+
     <button type="submit" class="btn btn-primary">Send Message</button>
 </form>
             </div>
@@ -231,4 +232,5 @@
     <script src="js/animations.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
